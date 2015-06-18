@@ -1,0 +1,32 @@
+html
+{
+	background-color: #fff;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+div.navigationPanel
+{
+	position:absolute;
+	height:94%;
+	width:20%;
+  	left:0%;
+	margin-top:65px;
+	background-color:#f5f5f5;
+	border-right: 1px solid #1180CF;
+  	transition:left 0.5s;
+}
+
+.contractNavigationPanel
+{
+	left:-20% !important;
+}
+.navigationPanel ul
+{
+	margin-left: 10px;
+ 	margin-top: 15px;
+}
+.navigationPanel li 
+{
+	margin-bottom: 20px;
+}

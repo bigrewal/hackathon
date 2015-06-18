@@ -1,0 +1,165 @@
+<div class="ui-main">
+	<div class = "nsoConfigTable" ng-mouseover = "disabledNCS()" ng-mouseleave = 'hideDisabledNCS()'>
+		<table class="nsoConfigPage">
+			<thead>
+				<tr>
+					<h2 id="title1" colspan="2">NSO (Tail-f NCS)</h2>
+				</tr>
+			</thead>
+			<tbody class="tbody">
+				<tr>
+					<td><label class="prefix-Class">IP Address: </label></td>
+					<td><div class="input-bar"><input class="form-control" id="nsoIPAdress" placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">Port: </label></td>
+					<td><div class="input-bar"><input class="form-control" placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">Username: </label></td>
+					<td><div class="input-bar"><input class="form-control" placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">Password: </label></td>
+					<td><div class="input-bar"><input class="form-control" placeholder=""></div></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class = "registrarTable">
+		<table class="registrarConfigPage">
+			<thead>
+				<tr>
+					<h2 id="title1" colspan="2">Registrars</h2>
+				</tr>
+			</thead>
+			<tbody class="tbody">
+				<tr>
+					<td><label class="prefix-Class">Mgmt ID: </label></td>
+					<td><div class="input-bar"><input class="form-control" id="nsoIPAdress" placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">Protocol: </label></td>
+					<td class="dropdown"><select class="form-control" id="sourceDropdown"><option value="ssh">ssh</option><option value="telnet">telnet</option></select></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">WhiteList: </label></td>
+					<td><div class="input-bar" style = 'width: 50%;'><input class="form-control" placeholder=""></div></td>
+					<td><button class = 'btn' style="position: absolute;top: 55%;left: 70%;">Browse </button></td>
+
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">IPv6 Address: </label></td>
+					<td><div class="input-bar"><input class="form-control" id='ipv6' placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class" >Subnet: </label></td>
+					<td><div class="input-bar"><input class="form-control" id='interfaceNo' placeholder=""></div></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class = "tftpConfigTable" ng-mouseover = "disabledTFTP()" ng-mouseleave = 'hideDisabledTFTP()'>
+		<table class="tftpConfigPage">
+			<thead>
+				<tr>
+					<h2 id="title1" colspan="2">TFTP Info</h2>
+				</tr>
+			</thead>
+			<tbody class="tbody">
+				<tr>
+					<td><label class="prefix-Class">IP Address: </label></td>
+					<td><div class="input-bar"><input class="form-control" id="nsoIPAdress" placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">Path Selection: </label></td>
+					<td><div class="input-bar"><input class="form-control" placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">UserName: </label></td>
+					<td><div class="input-bar"><input class="form-control" placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">Password: </label></td>
+					<td><div class="input-bar"><input class="form-control" placeholder=""></div></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="showHideButton">
+		<button class="control" title="Show expandAddRemoveBars Page" ng-click = "showAddRemoveBars()">
+			<div tag="i" id="addRemoveBars" class="glyphicon glyphicon-plus-sign" style="font-size: 2.0em;">
+			</div>
+		</button>
+	</div>
+
+	<div class = "addNewAnDevice" id = "addDevice">
+		<table class="addNewAnDeviceTable">
+			<thead>
+				<tr>
+					<h2 id="title1" colspan="2">Add New AN Device</h2>
+				</tr>
+			</thead>
+			<tbody class="tbody">
+				<tr>
+					<td><label class="prefix-Class">Serial no: </label></td>
+					<td><div class="input-bar"><input class="form-control" id="nsoIPAdress" placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">PID: </label></td>
+					<td><div class="input-bar"><input class="form-control" placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">Config File: </label></td>
+					<td><div class="input-bar"><input class="form-control" placeholder=""></div></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class = "addNonAnDevice" id = "addNonDevice">
+		<table class="addNonAnDeviceTable">
+			<thead>
+				<tr>
+					<h2 id="title1" colspan="2">Add Non AN Device</h2>
+				</tr>
+			</thead>
+			<tbody class="tbody">
+				<tr>
+					<td><label class="prefix-Class">IP/Mgnmt Node </label></td>
+					<td><div class="input-bar"><input class="form-control" id="nsoIPAdress" placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">Protocol: </label></td>
+					<td><div class="input-bar"><input class="form-control" placeholder=""></div></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="configButton">
+		<button id="config" class="btn btn-primary" ng-click = 'configure()'>Configure</button>
+	</div>
+
+	<div id="loading" style="display:none;"><img src="lib/images/loader.gif" alt="" /></div>
+
+	<div id = 'loadingBox' style="display:none;position:absolute;width:100%;height:100%;">
+		<h2> Discovering Nodes ... </h2>
+	</div>
+
+	<div class = 'disabledNCS' style = 'position:absolute;background-color:#CBCBCB;height:200px;width:255px;left:22%;top:13%;opacity:0.9;display:none'>
+		<h4 style='color:#000;font-weight:bold; margin-left:10px; position: relative;top: 80px;'> NCS is already configured !! </h4>
+	</div>
+
+	<div class = 'disabledTFTP' style = 'position:absolute;background-color:#CBCBCB;height:200px;width:300px;left:73%;top:13%;opacity:0.9;display:none'>
+		<h4 style='color:#000;font-weight:bold; margin-left:10px; position: relative;top: 80px;'> TFTP Info already provided !! </h4>
+	</div>
+
+	<div class = 'success' style = 'background-color:green;height:100px;width:250px;display:none'>
+		<h4 style = 'color:#fff; text-align:center;'> Configuration Done! </h4>
+		<button class = 'btn' ng-click = 'success()'> OK </button>
+
+	</div>
+</div>

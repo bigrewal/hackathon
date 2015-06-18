@@ -1,0 +1,25 @@
+<div style="color:#333333;" class="deviceInfoTable panel panel-primary">
+	<div class="panel-heading">
+		<div style = 'text-align:center;'>Device Status</div>
+	</div>
+	<div class="table-container">
+		<table class="table table-condensed" id="myTable">
+			<thead>
+				<tr>
+					<th>Nodes</th>
+					<th>Config Download</th>
+					<th>Image Download</th>
+					<th>Controller</th>
+				</tr>
+			</thead>
+			<tbody class="tbody-class" ng-repeat = 'device in deviceData.nodes'>
+				<tr>
+					<td>{{device.name}}</td>
+					<td><span class="glyphicon glyphicon-ok" style="color:#40793A;"></span></td>
+					<td><span class="glyphicon glyphicon-remove" style="color:#F00;"></span></td>
+					<td>Connected</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

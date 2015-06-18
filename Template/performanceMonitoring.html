@@ -1,0 +1,39 @@
+<div class = "performanceMonitoring">
+		<table class="performanceMonitor">
+			<thead>
+				<tr>
+					<h2 id="title1" colspan="2">Performance Monitor</h2>
+				</tr>
+			</thead>
+			<tbody class="tbody">
+				<tr>
+					<td><label class="prefix-Class">Packet Size: </label></td>
+					<td><div class="input-bar"><input class="form-control" id="nsoIPAdress" placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">Service Rates: </label></td>
+					<td class="dropdown"><select class="form-control" id="sourceDropdown"><option value="ssh">ssh</option><option value="telnet">telnet</option></select></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">Outer VLAN: </label></td>
+					<td><div class="input-bar"><input class="form-control" placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">COS: </label></td>
+					<td><div class="input-bar"><input class="form-control" placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">QOS: </label></td>
+					<td><div class="input-bar"><input class="form-control" placeholder=""></div></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<button class = 'btn btn-primary'> Start Test </button>
+
+		<graph loss='g1Loses' rates='g1Rates'></graph>
+		<graph-two tps = 'g2TPs' losses = 'g2Losses' irs = 'g2IRs' steps = 'g2Steps'> </graph-two>
+		
+
+
+	</div>

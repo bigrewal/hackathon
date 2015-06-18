@@ -1,0 +1,66 @@
+<div class = 'serviceProvisioning'>
+	<label class="chooseService">Choose Service: </label>
+	<select class="form-control" id="sourceDropdown" ng-model="service.type" ng-dropdown required>
+		<option ng-option value="L2VPN">L2 VPN</option>
+		<option ng-option value="L3VPN">L3 VPN</option>
+		<option ng-option value="ELAN">ELAN</option>
+		<option ng-option value="ELINE">ELINE</option>
+	</select>
+</div>
+
+<div class = 'userData' ng-if="service.type == 'L2VPN'">
+	<table class="userDataTable">
+			<thead>
+				<tr>
+					<h2 id="title1" colspan="2"> Service Data</h2>
+				</tr>
+			</thead>
+			<tbody class="tbody">
+				<tr>
+					<td><label class="serviceName">Name: </label></td>
+					<td><div class="input-bar"><input class="form-control" id="serviceName" placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">IP Address A: </label></td>
+					<td><div class="input-bar"><input class="form-control"  id = 'serviceIPAddress' placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">Device Name A: </label></td>
+					<td><div class="input-bar"><input class="form-control" id = 'serviceDeviceNameA' placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">IP Address B: </label></td>
+					<td><div class="input-bar"><input class="form-control" id = 'serviceIPAddressB'placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">Device Name B: </label></td>
+					<td><div class="input-bar"><input class="form-control" id = 'serviceDeviceNameB' placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">If Name A: </label></td>
+					<td><div class="input-bar"><input class="form-control" id = 'serviceIfNameA' placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">If Name B: </label></td>
+					<td><div class="input-bar"><input class="form-control" id = 'serviceIfNameB' placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">Mtu: </label></td>
+					<td><div class="input-bar"><input class="form-control" id = 'serviceMtu'placeholder=""></div></td>
+				</tr>
+				<tr>
+					<td><label class="prefix-Class">Circuit ID: </label></td>
+					<td><div class="input-bar"><input class="form-control" id = 'serviceCircuitId' placeholder=""></div></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<button class = 'btn btn-primary' id = 'provisionButton' ng-click = 'provision()'> Provision </button>
+
+
+		<div class = 'success' style = 'background-color:green;height:100px;width:250px;display:none'>
+			<h4 style = 'color:#fff; text-align:center;'> Service Provisioned! </h4>
+		<button class = 'btn' ng-click = 'success()'> OK </button>
+
+	</div>
+</div>
