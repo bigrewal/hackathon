@@ -109,4 +109,3 @@ function settings()
 		$('.settingsPage')[0].style.display = 'none';
 	}
 }
->>>>>>> 72086b0b04459ef631e5265301305939fd382b77
