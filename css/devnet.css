@@ -18,7 +18,10 @@ div.navigationPanel
   	z-index:2;
 }
 
-
+ul
+{
+	list-style-type: none;
+}
 .expandNavigationPanel
 {
 	width:16% !important;
@@ -102,6 +105,19 @@ div.canvas
 	height:70%;
 	top:20%;
 
+}
+div.searchResults
+{
+  position: absolute;
+  z-index: 3;
+  background-color: #fff;
+  top: 125px;
+  width: 11%;
+  left: 4%;
+}
+div.searchResults ul
+{
+	margin-left:0px;
 }
 i.glyphicon
 {

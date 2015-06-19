@@ -17,3 +17,16 @@ function showSearchBar()
 
     return false;
 }
+
+function showEvents()
+{
+	var value = $('#search')[0].value;
+	if(value != "")
+	{
+		$('.searchResults')[0].style.display = 'block';
+	}
+	else
+	{
+		$('.searchResults')[0].style.display = 'none';
+	}
+}

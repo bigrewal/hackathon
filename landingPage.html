@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>XXXX</title>
+	<title>Collage</title>
 
 	<link rel="stylesheet" href="css/devnet.css"/>
 	
@@ -36,7 +36,7 @@
     				</button>
   				</div>
   			</li>
-      		<li><a href="#" onclick='return showSearchBar()'><i class="glyphicon glyphicon-search"></i> <span> </span></a><input class="form-control" id = 'search' placeholder="Search..." style = 'display:none;'></li>
+      		<li><a href="#" onclick='return showSearchBar()'><i class="glyphicon glyphicon-search"></i> <span> </span></a><input class="form-control" id = 'search' placeholder="Search..." style = 'display:none;' onkeyup="showEvents()"></li>
       		<li><a href="#"><i class="glyphicon glyphicon-globe"></i> <span></span></a></li>
       		<li><a href="#"><i class="glyphicon glyphicon-home"></i> <span></span></a></li>
       		<li><a href="#"><i class="glyphicon glyphicon-plus-sign"></i> <span></span></a></li>
@@ -80,6 +80,12 @@
 
   	<div class = "canvas">
 
+  	</div>
+
+  	<div class = 'searchResults' style = 'display:none;'>
+  		<ul>
+  			<li>Hackathon <i class="glyphicon glyphicon-ok" style = 'font-size:1em;float: right;margin-right: 28px;color: green;'></i></li>
+  		</ul>
   	</div>
 
 </body>
