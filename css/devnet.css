@@ -18,10 +18,13 @@ div.navigationPanel
   	z-index:2;
 }
 
-
+ul
+{
+	list-style-type: none;
+}
 .expandNavigationPanel
 {
-	width:16% !important;
+	width:19% !important;
 }
 
 .expandAddTilePanel
@@ -39,11 +42,22 @@ div.newTile
 
 input#search
 {
-  
   position: absolute;
   width: 73%;
   top: 88px;
   left: 24%;
+}
+
+div.hub
+{
+  position: absolute;
+  top: 70px;
+  left: 24%;
+  width:70%;
+  height:45%;
+  background-color: #fff;
+  border:1px solid #1BAAFD;
+  border-radius: 5px;
 }
 
 div.nameArea
@@ -94,6 +108,54 @@ div.nameArea button.left:hover
   background-color: #f5f5f5;
 }
 
+div.nameAreaTwo
+{
+	background-color:#f5f5f5;
+	position: absolute;
+	top: 2%;
+  	left: 19%;
+  	width: 80%;
+  	height: 15%;
+}
+
+div.nameAreaTwo h1
+{
+	position: relative;
+  	left: 38%;
+  	margin-top: 30px;
+}
+div.nameAreaTwo button.right
+{
+  position: relative;
+  transition: all 0.3s;
+  background-color: #f5f5f5;
+  border: 0px;
+  bottom: 38px;
+  left: 80%;
+}
+
+div.nameAreaTwo button.right:hover
+{
+  color:#1BAAFD;
+  background-color: #f5f5f5;
+}
+
+div.nameAreaTwo button.left
+{
+  position: relative;
+  transition: all 0.3s;
+  background-color: #f5f5f5;
+  border: 0px;
+  bottom: 38px;
+  left: 16%;
+}
+
+div.nameAreaTwo button.left:hover
+{
+  color:#1BAAFD;
+  background-color: #f5f5f5;
+}
+
 div.canvas
 {
 	background-color: #f5f5f5;
@@ -103,6 +165,71 @@ div.canvas
 	height:70%;
 	top:20%;
 
+}
+div.notificationsTable
+{
+	display:none;
+	background-color:#fff;
+	position: absolute;
+  	width: 11%;
+  	height: 50%;
+  	left: 4%;
+  	top: 85px;
+  	z-index: 4;
+  	border: 1px solid #1BAAFD;
+  	border-radius: 5px;
+}
+tr.spaceUnder > td
+{
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+tr.spaceTwo > td
+{
+  
+  padding-bottom: 2em;
+}
+
+div.settingsPage
+{
+	display:none;
+	background-color:#fff;
+	position: absolute;
+  	width: 11%;
+  	height: 30%;
+  	left: 4%;
+  	top: 10px;
+  	z-index: 4;
+  	border: 1px solid #1BAAFD;
+  	border-radius: 5px;
+}
+div.searchResults
+{
+  position: absolute;
+  z-index: 3;
+  background-color: #fff;
+  top: 125px;
+  width: 11%;
+  left: 5%;
+}
+div.searchResultsSecond
+{
+  position: absolute;
+  z-index: 3;
+  background-color: #fff;
+  top: 125px;
+  width: 11%;
+  left: 5%;
+
+}
+div.searchResults ul
+{
+	margin-left:0px;
+}
+div.searchResultsSecond ul
+{
+	margin-left:0px;
 }
 i.glyphicon
 {

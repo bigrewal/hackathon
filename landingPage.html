@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>XXXX</title>
+	<title>Collage</title>
 
 	<link rel="stylesheet" href="css/devnet.css"/>
 	
@@ -31,14 +31,40 @@
     	<ul>
     		<li>
     			<div class="rightbar-item">
-    				<button class="control">
+    				<button class="control" onClick = 'settings()'>
       					<div tag="i" class="fa fa-random"></div>
     				</button>
   				</div>
   			</li>
-      		<li><a href="#" onclick='return showSearchBar()'><i class="glyphicon glyphicon-search"></i> <span> </span></a><input class="form-control" id = 'search' placeholder="Search..." style = 'display:none;'></li>
-      		<li><a href="#"><i class="glyphicon glyphicon-globe"></i> <span></span></a></li>
-      		<li><a href="#"><i class="glyphicon glyphicon-home"></i> <span></span></a></li>
+      		<li><a href="#" onclick='return showSearchBar()'><i class="glyphicon glyphicon-search"></i> <span> </span></a><input class="form-control" id = 'search' placeholder="Search..." style = 'display:none;' onkeyup = 'showEvents()'></li>
+      		<li><a href="#"  onclick='theHub()'><i class="glyphicon glyphicon-user"></i> 
+				<span></span></a>
+					<div class = "hub" style = 'display:none;'>
+            <div style = 'border-bottom:1px solid black;'>
+						  <h3>Content Hub</h3>
+            </div>
+						
+            <table>
+              <tbody>
+                <tr class = 'space'>
+                  <td colspan:'2'> <h4> My Content </h4> </td>
+                </tr>
+                <tr class = 'spaceTwo'>
+                  <td> Hackathon Events </td>
+                </tr>
+                <tr class = 'subscriptions'>
+                  <td colspan:'2'> <h4> My Subscriptions </h4> </td>
+                </tr>
+                <tr>
+                  <td colspan:'2'> Devnet Classes </td>
+                </tr>
+              </tbody>
+            </table>
+
+
+
+					</div></li>
+      		<li><a href="#" onclick='return showNotifications()'><i class="glyphicon glyphicon-globe"></i> <span></span></a></li>
       		<li><a href="#" onclick='return showAddTile()'><i class="glyphicon glyphicon-plus-sign"></i> <span></span></a>
 				<div class = 'newTile'>
 					Drag a tile onto the Collage:
@@ -58,6 +84,7 @@
     	</ul>
   	</div>
 
+	
 	<div class = "settings">
 	</div>
 	
@@ -76,18 +103,84 @@
 	<div class = "logo">
 	</div>
 	
-  	<div class = 'nameArea'>
+
+	<div class = 'newTile'>
+		<span class="tile"><img class="draggableTile" type="label" src="label.png" alt="Add a Label" height="50" width="200"/></span>
+	</div>
+  	<div class = 'nameArea' style = 'display:block;'>
   		<h1> Hackathon Events </h1>
-  		<button class="right">
+  		<button class="right" onClick = 'rightArrowClick()'>
   			<div tag="i" id="rightIcon" class="glyphicon glyphicon-chevron-right" style = 'font-size:2em'></div>
   		</button>
 
-  		<button class="left">
+  		<button class="left" onClick = 'leftArrowClick()'>
+  			<div tag="i" id="leftIcon" class="glyphicon glyphicon-chevron-left" style = 'font-size:2em'></div>
+  		</button>
+  	</div>
+  	<div class = 'nameAreaTwo' style = 'display:none;'>
+  		<h1> Devnet Events </h1>
+  		<button class="right" onClick = 'rightArrowClick()'>
+  			<div tag="i" id="rightIcon" class="glyphicon glyphicon-chevron-right" style = 'font-size:2em'></div>
+  		</button>
+
+  		<button class="left" onClick = 'leftArrowClick()'>
   			<div tag="i" id="leftIcon" class="glyphicon glyphicon-chevron-left" style = 'font-size:2em'></div>
   		</button>
   	</div>
 
   	<div class = "canvas">
+
+  	</div>
+
+  	<div class = 'searchResults' style = 'display:none;'>
+  		<ul>
+  			<li>Hackathon <i class="glyphicon glyphicon-ok" style = 'font-size:1em;float: right;margin-right: 28px;color: green;'></i></li>
+  		</ul>
+  	</div>
+
+  	<div class = 'searchResultsSecond' style = 'display:none;'>
+  		<ul>
+  			<li>Devnet <button id = 'subscribeButton' style='float: right;background-color: #fff;border: 0px;' onclick='subscribe()'><i class="glyphicon glyphicon-plus-sign" style = 'font-size:1em;float: right;margin-right: 28px;color: green;' id = 'subscribeIcon'></i></button></li>
+  		</ul>
+  	</div>
+
+  	<div class = 'notificationsTable'>
+  		<div style = 'border-bottom:1px solid black;'>
+  			<h4 style = 'margin-left:20px;font-weight: bolder;'> Notifications </h4>
+  		</div>
+
+  		<table>
+  			<tbody>
+  				<tr class = 'spaceUnder'>
+  					<td colspan = '2'> Subscribed to Devnet Events </td>
+  				</tr>
+  			</tbody>
+  		</table>
+
+  	</div>
+
+  	<div class = 'settingsPage'>
+  		<div style = 'border-bottom:1px solid black;'>
+  			<h4 style = 'margin-left:35px;font-weight: bolder;'> Settings </h4>
+  		</div>
+
+  		<table>
+  			<tbody>
+  				<tr class = 'spaceUnder'>
+  					<td><i class="glyphicon glyphicon-user" style = 'font-size:1em;float: right;margin-right: 28px;color: green;'></i></td>
+  					<td> Logged in as: ADMIN </td>
+  				</tr>
+  				<tr >
+  					<td colspan = '2' style = 'text-align:center;'> Help </td>
+  				</tr>
+  				<tr >
+  					<td colspan = '2' style = 'text-align:center;'> Feedback </td>
+  				</tr>
+  				<tr>
+  					<td colspan = '2' style = 'text-align:center;color:blue;'> Signout  </td>
+  				</tr>
+  			</tbody>
+  		</table>
 
   	</div>
 	<script type="text/javascript" src="dynamicFunctions.js"></script>
