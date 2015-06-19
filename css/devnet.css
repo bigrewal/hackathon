@@ -21,28 +21,23 @@ div.navigationPanel
 
 .expandNavigationPanel
 {
-	width:16% !important;
+	height:100%%;
+	width:25% !important;
 }
 
 input#search
 {
-  
   position: absolute;
   width: 73%;
   top: 88px;
   left: 24%;
 }
 
-div.newTile
+div.hub
 {
-	position:absolute;
-	height:94%;
-	width: 25%;
-	left: 5%;
-	z-index: 1;
-	
-	background-color:#3059AC;
-	border-right: 5px solid #1BAAFD;
+  position: absolute;
+  top: 70px;
+  left: 24%;
 }
 
 div.nameArea
