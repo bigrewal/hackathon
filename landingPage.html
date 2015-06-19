@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>XXXX</title>
+	<title>Collage</title>
 
 	<link rel="stylesheet" href="css/devnet.css"/>
 	
@@ -36,6 +36,7 @@
     				</button>
   				</div>
   			</li>
+<<<<<<< HEAD
       		<li><a href="#" onclick='return showSearchBar()'><i class="glyphicon glyphicon-search"></i> <span> </span></a><input class="form-control" id = 'search' placeholder="Search..." style = 'display:none;'></li>
       		<li><a href="#"><i class="glyphicon glyphicon-globe"></i> <span></span></a></li>
       		<li><a href="#"  onclick='theHub()'><i class="glyphicon glyphicon-home"></i> 
@@ -48,6 +49,11 @@
 						<h4>Swimming Society</h4>
 						<h4>Cats</h4>
 					</div></li>
+=======
+      		<li><a href="#" onclick='return showSearchBar()'><i class="glyphicon glyphicon-search"></i> <span> </span></a><input class="form-control" id = 'search' placeholder="Search..." style = 'display:none;' onkeyup="showEvents()"></li>
+      		<li><a href="#" onclick='return showNotifications()'><i class="glyphicon glyphicon-globe"></i> <span></span></a></li>
+      		<li><a href="#"><i class="glyphicon glyphicon-home"></i> <span></span></a></li>
+>>>>>>> 035f7002de03df550660f0aefe51c73671706c33
       		<li><a href="#"><i class="glyphicon glyphicon-plus-sign"></i> <span></span></a></li>
       		<li><a href="#"><i class="glyphicon glyphicon-pencil"></i> <span></span></a></li>
     	</ul>
@@ -74,18 +80,49 @@
 	<div class = 'newTile'>
 		<span class="tile"><img class="draggableTile" type="label" src="label.png" alt="Add a Label" height="50" width="200"/></span>
 	</div>
-  	<div class = 'nameArea'>
+  	<div class = 'nameArea' style = 'display:block;'>
   		<h1> Hackathon Events </h1>
-  		<button class="right">
+  		<button class="right" onClick = 'rightArrowClick()'>
   			<div tag="i" id="rightIcon" class="glyphicon glyphicon-chevron-right" style = 'font-size:2em'></div>
   		</button>
 
-  		<button class="left">
+  		<button class="left" onClick = 'leftArrowClick()'>
+  			<div tag="i" id="leftIcon" class="glyphicon glyphicon-chevron-left" style = 'font-size:2em'></div>
+  		</button>
+  	</div>
+  	<div class = 'nameAreaTwo' style = 'display:none;'>
+  		<h1> Devnet Events </h1>
+  		<button class="right" onClick = 'rightArrowClick()'>
+  			<div tag="i" id="rightIcon" class="glyphicon glyphicon-chevron-right" style = 'font-size:2em'></div>
+  		</button>
+
+  		<button class="left" onClick = 'leftArrowClick()'>
   			<div tag="i" id="leftIcon" class="glyphicon glyphicon-chevron-left" style = 'font-size:2em'></div>
   		</button>
   	</div>
 
   	<div class = "canvas">
+
+  	</div>
+
+  	<div class = 'searchResults' style = 'display:none;'>
+  		<ul>
+  			<li>Hackathon <i class="glyphicon glyphicon-ok" style = 'font-size:1em;float: right;margin-right: 28px;color: green;'></i></li>
+  		</ul>
+  	</div>
+
+  	<div class = 'searchResultsSecond' style = 'display:none;'>
+  		<ul>
+  			<li>Devnet <button id = 'subscribeButton' style='float: right;background-color: #fff;border: 0px;' onclick='subscribe()'><i class="glyphicon glyphicon-plus-sign" style = 'font-size:1em;float: right;margin-right: 28px;color: green;' id = 'subscribeIcon'></i></button></li>
+  		</ul>
+  	</div>
+
+  	<div class = 'notificationsTable'>
+  		<h4 style = 'margin-left:20px;font-weight: bolder;'> Notifications </h4>
+
+  		<ul>
+  			<li> Subscribed to Devnet Classes </li>
+  		</ul>
 
   	</div>
 
