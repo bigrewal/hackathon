@@ -24,6 +24,19 @@ div.navigationPanel
 	width:16% !important;
 }
 
+.expandAddTilePanel
+{
+	width:16% !important;
+}
+
+div.newTile
+{
+	position:absolute;
+	left:24%;
+	top: 80px;
+	display: none;
+}
+
 input#search
 {
   
@@ -31,18 +44,6 @@ input#search
   width: 73%;
   top: 88px;
   left: 24%;
-}
-
-div.newTile
-{
-	position:absolute;
-	height:94%;
-	width: 20%;
-	left: 5%;
-	z-index: 1;
-	
-	background-color:#3059AC;
-	border-right: 5px solid #1BAAFD;
 }
 
 div.nameArea

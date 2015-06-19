@@ -39,12 +39,25 @@
       		<li><a href="#" onclick='return showSearchBar()'><i class="glyphicon glyphicon-search"></i> <span> </span></a><input class="form-control" id = 'search' placeholder="Search..." style = 'display:none;'></li>
       		<li><a href="#"><i class="glyphicon glyphicon-globe"></i> <span></span></a></li>
       		<li><a href="#"><i class="glyphicon glyphicon-home"></i> <span></span></a></li>
-      		<li><a href="#"><i class="glyphicon glyphicon-plus-sign"></i> <span></span></a></li>
+      		<li><a href="#" onclick='return showAddTile()'><i class="glyphicon glyphicon-plus-sign"></i> <span></span></a>
+				<div class = 'newTile'>
+					Drag a tile onto the Collage:
+					<span class="label label-primary">Basic Tiles</span><br>
+					<span class="tile"><img class="draggableTile" type="label" src="label.png" alt="Add a Label" height="50" width="125"/></span>
+					<span class="tile"><img class="draggableTile" type="image" src="image.png" alt="Add an Image" height="50" width="125"/></span>
+					<span class="tile"><img class="draggableTile" type="description" src="description.png" alt="Add a Description" height="50" width="125"/></span>
+					<br><br><span class="label label-primary">Popular Community Tiles</span>
+					<span class="tile"><img class="draggableTile" type="poster" src="poster.png" alt="Add a Poster" height="50" width="125"/></span>		
+					<span class="tile"><img class="draggableTile" style='left:100px' type="signuplist" src="signuplist.png" alt="Add a Sign Up Sheet" height="50" width="125"/></span>		
+					<br>
+					<br><span class="label label-primary">Search Community Tiles</span>
+					<input class="form-control" id = 'tileSearch' placeholder='Search...' style='width:180px'>
+				</div>
+			</li>
       		<li><a href="#"><i class="glyphicon glyphicon-pencil"></i> <span></span></a></li>
     	</ul>
   	</div>
 
-	
 	<div class = "settings">
 	</div>
 	
@@ -63,12 +76,6 @@
 	<div class = "logo">
 	</div>
 	
-
-	<div class = 'newTile'>
-		<span class="tile"><img class="draggableTile" type="label" src="label.png" alt="Add a Label" height="80" width="400"/></span>
-		<span class="tile"><img class="draggableTile" type="image" src="image.png" alt="Add an Image" height="300" width="300"/></span>
-		
-	</div>
   	<div class = 'nameArea'>
   		<h1> Hackathon Events </h1>
   		<button class="right">
@@ -83,7 +90,7 @@
   	<div class = "canvas">
 
   	</div>
-
+	<script type="text/javascript" src="dynamicFunctions.js"></script>
 </body>
 
 </html>
