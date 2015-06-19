@@ -17,6 +17,18 @@ div.navigationPanel
   	transition:left 0.5s;
 }
 
+div.newTile
+{
+	position:absolute;
+	height:94%;
+	width: 25%;
+	left: 5%;
+	z-index: 1;
+	
+	background-color:#3059AC;
+	border-right: 5px solid #1BAAFD;
+}
+
 div.nameArea
 {
 	background-color:#f5f5f5;
