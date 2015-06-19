@@ -8,7 +8,7 @@ html
 div.navigationPanel
 {
 	position:absolute;
-	height:94%;
+	height:100%;
 	width:5%;
   	left:0%;
 	
@@ -17,12 +17,26 @@ div.navigationPanel
   	transition:left 0.5s;
 }
 
+.expandNavigationPanel
+{
+	width:16% !important;
+}
+
+input#search
+{
+  
+  position: absolute;
+  width: 73%;
+  top: 12%;
+  left: 24%;
+}
+
 div.nameArea
 {
 	background-color:#f5f5f5;
 	position: absolute;
 	top: 2%;
-  	left: 16%;
+  	left: 19%;
   	width: 80%;
   	height: 15%;
 }
@@ -69,7 +83,7 @@ div.canvas
 {
 	background-color: #f5f5f5;
 	position:absolute;
-	left:16%;
+	left:19%;
 	width:80%;
 	height:70%;
 	top:20%;
