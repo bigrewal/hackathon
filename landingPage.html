@@ -4,7 +4,7 @@
 	<title>XXXX</title>
 
 	<link rel="stylesheet" href="css/devnet.css"/>
-
+	
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="nextt/next/css/next-blue.css"/>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -18,26 +18,52 @@
 	<script type="text/javascript" src="nextt/next-topology/js/next-topology.js"></script>
 	<link rel="stylesheet" type="text/css" href=" font-awesome/css/font-awesome.css"/>
 
+  <script type="text/javascript" src="https://developers.google.com/speed/libraries/"></script>
+   
+
+  <!--JS Files -->
+  <script type="text/javascript" src="businessLogic.js"></script>
+
 </head>
 
 <body>
-
   	<div class = 'navigationPanel' id = 'navPanel'>
     	<ul>
     		<li>
     			<div class="rightbar-item">
-    				<button class="control" ng-click = 'showOrHideNavBar()'>
+    				<button class="control">
       					<div tag="i" class="fa fa-random"></div>
     				</button>
   				</div>
   			</li>
-      		<li><a href="#"><i class="glyphicon glyphicon-search"></i> <span></span></a></li>
+      		<li><a href="#" onclick='return showSearchBar()'><i class="glyphicon glyphicon-search"></i> <span> </span></a><input class="form-control" id = 'search' placeholder="Search..." style = 'display:none;'></li>
       		<li><a href="#"><i class="glyphicon glyphicon-globe"></i> <span></span></a></li>
       		<li><a href="#"><i class="glyphicon glyphicon-home"></i> <span></span></a></li>
       		<li><a href="#"><i class="glyphicon glyphicon-plus-sign"></i> <span></span></a></li>
       		<li><a href="#"><i class="glyphicon glyphicon-pencil"></i> <span></span></a></li>
     	</ul>
   	</div>
+
+	
+	<div class = "settings">
+	</div>
+	
+	<div class = "notifications">
+	</div>
+	
+	<div class = "hub">
+	</div>
+	
+	<div class = "newTile">
+	</div>
+	
+	<div class = "template">
+	</div>
+	
+	<div class = "logo">
+	</div>
+	
+
 	<div class = 'newTile'>
 		<span class="tile"><img class="draggableTile" type="label" src="label.png" alt="Add a Label" height="80" width="400"/></span>
 		<span class="tile"><img class="draggableTile" type="image" src="image.png" alt="Add an Image" height="300" width="300"/></span>
