@@ -1,6 +1,6 @@
 function showSearchBar(){
-	var className = $('.navigationPanel')[0].className;
-	if(className == 'navigationPanel')
+	var className = $('#search')[0].style.display;
+	if(className == 'none')
 	{
 		//console.log($('.navigationPanel'));
 		$('.navigationPanel').addClass('expandNavigationPanel');
@@ -8,27 +8,36 @@ function showSearchBar(){
 		//console.log($('#search'));
 		$('#search')[0].style.display = 'block';
 		$('.notificationsTable')[0].style.display = 'none';
+		$('.settingsPage')[0].style.display = 'none';
+		$('div.hub')[0].style.display = 'none';
 	}
 	else{
 		$('.navigationPanel').removeClass().addClass('navigationPanel');
 		$('#search')[0].style.display = 'none';
 		$('.notificationsTable')[0].style.display = 'none';
+		$('.settingsPage')[0].style.display = 'none';
+		$('div.hub')[0].style.display = 'none';
 	}
     return false;
 }
  
 function theHub(){
-	var className = $('.navigationPanel')[0].className;
-	//console.log(className);
-	if(className == 'navigationPanel'){
+	var className = $('div.hub')[0].style.display;
+	if(className == 'none')
+	{
 		$('.navigationPanel').addClass('expandNavigationPanel');
 		//console.log($('.hub'));
+		$('.settingsPage')[0].style.display = 'none';
+		$('#search')[0].style.display = 'none';
+		$('.notificationsTable')[0].style.display = 'none';
 		$('div.hub')[0].style.display = 'block';
 	}
 		else{
 			$('.navigationPanel').removeClass().addClass('navigationPanel');
 			$('#search')[0].style.display = 'none';
-			$('.hub')[0].style.display = 'none';
+			$('div.hub')[0].style.display = 'none';
+			$('.settingsPage')[0].style.display = 'none';
+			$('.notificationsTable')[0].style.display = 'none';
 		}
 	return false;
 } 
@@ -80,6 +89,7 @@ function showNotifications()
 		console.log($('.notificationsTable'));
 		$('.notificationsTable')[0].style.display = 'block';
 		$('.settingsPage')[0].style.display = 'none';
+		$('div.hub')[0].style.display = 'none';
 	}
 	else
 	{
@@ -87,6 +97,7 @@ function showNotifications()
 		$('#search')[0].style.display = 'none';
 		$('.notificationsTable')[0].style.display = 'none';
 		$('.settingsPage')[0].style.display = 'none';
+		$('div.hub')[0].style.display = 'none';
 	}
 
 }
@@ -100,6 +111,7 @@ function settings()
 		$('.navigationPanel').addClass('expandNavigationPanel');
 		$('.notificationsTable')[0].style.display = 'none';
 		$('.settingsPage')[0].style.display = 'block';
+		$('div.hub')[0].style.display = 'none';
 	}
 	else
 	{
@@ -107,5 +119,6 @@ function settings()
 		$('#search')[0].style.display = 'none';
 		$('.notificationsTable')[0].style.display = 'none';
 		$('.settingsPage')[0].style.display = 'none';
+		$('div.hub')[0].style.display = 'none';
 	}
 }

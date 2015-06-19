@@ -36,9 +36,35 @@
     				</button>
   				</div>
   			</li>
-      		<li><a href="#" onclick='return showSearchBar()'><i class="glyphicon glyphicon-search"></i> <span> </span></a><input class="form-control" id = 'search' placeholder="Search..." style = 'display:none;' onkeyup="showEvents()"></li>
+      		<li><a href="#" onclick='return showSearchBar()'><i class="glyphicon glyphicon-search"></i> <span> </span></a><input class="form-control" id = 'search' placeholder="Search..." style = 'display:none;' onkeyup = 'showEvents()'></li>
+      		<li><a href="#"  onclick='theHub()'><i class="glyphicon glyphicon-user"></i> 
+				<span></span></a>
+					<div class = "hub" style = 'display:none;'>
+            <div style = 'border-bottom:1px solid black;'>
+						  <h3>Content Hub</h3>
+            </div>
+						
+            <table>
+              <tbody>
+                <tr class = 'space'>
+                  <td colspan:'2'> <h4> My Content </h4> </td>
+                </tr>
+                <tr class = 'spaceTwo'>
+                  <td> Hackathon Events </td>
+                </tr>
+                <tr class = 'subscriptions'>
+                  <td colspan:'2'> <h4> My Subscriptions </h4> </td>
+                </tr>
+                <tr>
+                  <td colspan:'2'> Devnet Classes </td>
+                </tr>
+              </tbody>
+            </table>
+
+
+
+					</div></li>
       		<li><a href="#" onclick='return showNotifications()'><i class="glyphicon glyphicon-globe"></i> <span></span></a></li>
-      		<li><a href="#"><i class="glyphicon glyphicon-home"></i> <span></span></a></li>
       		<li><a href="#"><i class="glyphicon glyphicon-plus-sign"></i> <span></span></a></li>
       		<li><a href="#"><i class="glyphicon glyphicon-pencil"></i> <span></span></a></li>
     	</ul>

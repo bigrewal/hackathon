@@ -24,8 +24,7 @@ ul
 }
 .expandNavigationPanel
 {
-	height:100%%;
-	width:25% !important;
+	width:19% !important;
 }
 
 input#search
@@ -41,6 +40,11 @@ div.hub
   position: absolute;
   top: 70px;
   left: 24%;
+  width:70%;
+  height:45%;
+  background-color: #fff;
+  border:1px solid #1BAAFD;
+  border-radius: 5px;
 }
 
 div.nameArea
@@ -168,6 +172,12 @@ tr.spaceUnder > td
   padding-bottom: 2em;
 }
 
+tr.spaceTwo > td
+{
+  
+  padding-bottom: 2em;
+}
+
 div.settingsPage
 {
 	display:none;
@@ -188,7 +198,7 @@ div.searchResults
   background-color: #fff;
   top: 125px;
   width: 11%;
-  left: 4%;
+  left: 5%;
 }
 div.searchResultsSecond
 {
@@ -197,7 +207,7 @@ div.searchResultsSecond
   background-color: #fff;
   top: 125px;
   width: 11%;
-  left: 4%;
+  left: 5%;
 
 }
 div.searchResults ul
