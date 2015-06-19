@@ -19,18 +19,21 @@
 </head>
 
 <body>
-	<div class="rightbar-item">
-    	<button class="control" title="Establish LSP" ng-click = 'showOrHideNavBar()'>
-      		<div tag="i" class="fa fa-random"></div>
-    	</button>
-  	</div>
 
   	<div class = 'navigationPanel' id = 'navPanel'>
     	<ul>
-      		<li><a href="#home"><i class="glyphicon glyphicon-search"></i> <span></span></a></li>
-      		<li><a href="#configuration"><i class="glyphicon glyphicon-globe"></i> <span></span></a></li>
-      		<li><a href="#deviceStatus"><i class="glyphicon glyphicon-home"></i> <span></span></a></li>
-      		<li><a href="#serviceProvisioning"><i class="glyphicon glyphicon-plus-sign"></i> <span></span></a></li>
+    		<li>
+    			<div class="rightbar-item">
+    				<button class="control" ng-click = 'showOrHideNavBar()'>
+      					<div tag="i" class="fa fa-random"></div>
+    				</button>
+  				</div>
+  			</li>
+      		<li><a href="#"><i class="glyphicon glyphicon-search"></i> <span></span></a></li>
+      		<li><a href="#"><i class="glyphicon glyphicon-globe"></i> <span></span></a></li>
+      		<li><a href="#"><i class="glyphicon glyphicon-home"></i> <span></span></a></li>
+      		<li><a href="#"><i class="glyphicon glyphicon-plus-sign"></i> <span></span></a></li>
+      		<li><a href="#"><i class="glyphicon glyphicon-pencil"></i> <span></span></a></li>
     	</ul>
   	</div>
 
@@ -43,6 +46,10 @@
   		<button class="left">
   			<div tag="i" id="leftIcon" class="glyphicon glyphicon-chevron-left" style = 'font-size:2em'></div>
   		</button>
+  	</div>
+
+  	<div class = "canvas">
+
   	</div>
 
 </body>

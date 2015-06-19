@@ -11,7 +11,7 @@ div.navigationPanel
 	height:94%;
 	width:5%;
   	left:0%;
-	margin-top:65px;
+	
 	background-color:#f5f5f5;
 	border-right: 5px solid #1BAAFD;
   	transition:left 0.5s;
@@ -36,6 +36,7 @@ div.nameArea h1
 div.nameArea button.right
 {
   position: relative;
+  transition: all 0.3s;
   background-color: #f5f5f5;
   border: 0px;
   bottom: 38px;
@@ -51,6 +52,7 @@ div.nameArea button.right:hover
 div.nameArea button.left
 {
   position: relative;
+  transition: all 0.3s;
   background-color: #f5f5f5;
   border: 0px;
   bottom: 38px;
@@ -61,6 +63,17 @@ div.nameArea button.left:hover
 {
   color:#1BAAFD;
   background-color: #f5f5f5;
+}
+
+div.canvas
+{
+	background-color: #f5f5f5;
+	position:absolute;
+	left:16%;
+	width:80%;
+	height:70%;
+	top:20%;
+
 }
 i.glyphicon
 {
@@ -75,13 +88,12 @@ i.glyphicon
 .navigationPanel ul
 {
 	margin-left: 10px;
- 	margin-top: 15px;
 }
 .navigationPanel li 
 {
 	margin-bottom: 35px;
 }
-div.rightbar-item
+/*div.rightbar-item
 {
   position: absolute;
   top: 2%;
@@ -90,7 +102,7 @@ div.rightbar-item
   border-top: 1px solid #1BAAFD;
   border-right: 5px solid #1BAAFD;
   z-index:0;
-}
+}*/
 
 .rightbar-item button.control {
   -webkit-transition: all 0.3s;
@@ -101,8 +113,8 @@ div.rightbar-item
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
   border-right: 3px solid transparent;
-  display: block;
-  width: 60px;
+  /*display: block;
+  width: 60px;*/
   height: 55px;
   background: transparent;
   color: #aaa;
