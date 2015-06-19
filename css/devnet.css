@@ -15,9 +15,10 @@ div.navigationPanel
 	background-color:#f5f5f5;
 	border-right: 5px solid #1BAAFD;
   	transition:left 0.5s;
+  	z-index:2;
 }
 
-<<<<<<< HEAD
+
 .expandNavigationPanel
 {
 	width:16% !important;
