@@ -31,7 +31,7 @@
     	<ul>
     		<li>
     			<div class="rightbar-item">
-    				<button class="control">
+    				<button class="control" onClick = 'settings()'>
       					<div tag="i" class="fa fa-random"></div>
     				</button>
   				</div>
@@ -118,11 +118,42 @@
   	</div>
 
   	<div class = 'notificationsTable'>
-  		<h4 style = 'margin-left:20px;font-weight: bolder;'> Notifications </h4>
+  		<div style = 'border-bottom:1px solid black;'>
+  			<h4 style = 'margin-left:20px;font-weight: bolder;'> Notifications </h4>
+  		</div>
 
-  		<ul>
-  			<li> Subscribed to Devnet Classes </li>
-  		</ul>
+  		<table>
+  			<tbody>
+  				<tr class = 'spaceUnder'>
+  					<td colspan = '2'> Subscribed to Devnet Events </td>
+  				</tr>
+  			</tbody>
+  		</table>
+
+  	</div>
+
+  	<div class = 'settingsPage'>
+  		<div style = 'border-bottom:1px solid black;'>
+  			<h4 style = 'margin-left:35px;font-weight: bolder;'> Settings </h4>
+  		</div>
+
+  		<table>
+  			<tbody>
+  				<tr class = 'spaceUnder'>
+  					<td><i class="glyphicon glyphicon-user" style = 'font-size:1em;float: right;margin-right: 28px;color: green;'></i></td>
+  					<td> Logged in as: ADMIN </td>
+  				</tr>
+  				<tr >
+  					<td colspan = '2' style = 'text-align:center;'> Help </td>
+  				</tr>
+  				<tr >
+  					<td colspan = '2' style = 'text-align:center;'> Feedback </td>
+  				</tr>
+  				<tr>
+  					<td colspan = '2' style = 'text-align:center;color:blue;'> Signout  </td>
+  				</tr>
+  			</tbody>
+  		</table>
 
   	</div>
 
