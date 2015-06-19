@@ -66,12 +66,33 @@ function showNotifications()
 		$('.navigationPanel').addClass('expandNavigationPanel');
 		console.log($('.notificationsTable'));
 		$('.notificationsTable')[0].style.display = 'block';
+		$('.settingsPage')[0].style.display = 'none';
 	}
 	else
 	{
 		$('.navigationPanel').removeClass().addClass('navigationPanel');
 		$('#search')[0].style.display = 'none';
 		$('.notificationsTable')[0].style.display = 'none';
+		$('.settingsPage')[0].style.display = 'none';
 	}
 
+}
+
+function settings()
+{
+	var className = $('.settingsPage')[0].style.display;
+	if(className == 'none')
+	{
+		$('#search')[0].style.display = 'none';
+		$('.navigationPanel').addClass('expandNavigationPanel');
+		$('.notificationsTable')[0].style.display = 'none';
+		$('.settingsPage')[0].style.display = 'block';
+	}
+	else
+	{
+		$('.navigationPanel').removeClass().addClass('navigationPanel');
+		$('#search')[0].style.display = 'none';
+		$('.notificationsTable')[0].style.display = 'none';
+		$('.settingsPage')[0].style.display = 'none';
+	}
 }

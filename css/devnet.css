@@ -167,6 +167,25 @@ div.notificationsTable
   	border: 1px solid #1BAAFD;
   	border-radius: 5px;
 }
+tr.spaceUnder > td
+{
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+div.settingsPage
+{
+	display:none;
+	background-color:#fff;
+	position: absolute;
+  	width: 11%;
+  	height: 30%;
+  	left: 4%;
+  	top: 10px;
+  	z-index: 4;
+  	border: 1px solid #1BAAFD;
+  	border-radius: 5px;
+}
 div.searchResults
 {
   position: absolute;
