@@ -9,29 +9,42 @@
   <link rel="stylesheet" href="nextt/next/css/next-blue.css"/>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-  <link rel="stylesheet" href="lib/templates/template/html/css/bootstrap-glyphicons.css" />
-  <link rel="stylesheet" href="lib/templates/template/html/css/fullcalendar.css"/>
-  <link rel="stylesheet" href="lib/templates/template/html/css/unicorn.main.css"/>
-  <link rel="stylesheet" href="lib/templates/template/html/css/unicorn.grey.css" class="skin-color"/>
-
   <!--next-->
-  <link rel="stylesheet" href="lib/nextt/next/css/next-blue.css"/>
-  <link rel="stylesheet" href="lib/nextt/next-topology/css/next-topology.css"/>
-  <script type="text/javascript" src="lib/nextt/next/js/next.js"></script>
-  <script type="text/javascript" src="lib/nextt/next-topology/js/next-topology.js"></script>
-  <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.css"/>
+  <link rel="stylesheet" href="nextt/next/css/next-blue.css"/>
+  <link rel="stylesheet" href="nextt/next-topology/css/next-topology.css"/>
+  <script type="text/javascript" src="nextt/next/js/next.js"></script>
+  <script type="text/javascript" src="nextt/next-topology/js/next-topology.js"></script>
+  <link rel="stylesheet" type="text/css" href=" font-awesome/css/font-awesome.css"/>
 
 </head>
 
 <body>
-  <div class = 'navigationPanel' id = 'navPanel'>
-    <ul>
-      <li><a href="#home"><i class="glyphicon glyphicon-search"></i> <span>Search</span></a></li>
-      <li><a href="#configuration"><i class="glyphicon glyphicon-globe"></i> <span>Notifications</span></a></li>
-      <li><a href="#deviceStatus"><i class="glyphicon glyphicon-home"></i> <span>Feed</span></a></li>
-      <li><a href="#serviceProvisioning"><i class="glyphicon glyphicon-plus-sign"></i> <span>Add</span></a></li>
-    </ul>
-  </div>
+	<div class="rightbar-item">
+    	<button class="control" title="Establish LSP" ng-click = 'showOrHideNavBar()'>
+      		<div tag="i" class="fa fa-random"></div>
+    	</button>
+  	</div>
+
+  	<div class = 'navigationPanel' id = 'navPanel'>
+    	<ul>
+      		<li><a href="#home"><i class="glyphicon glyphicon-search"></i> <span></span></a></li>
+      		<li><a href="#configuration"><i class="glyphicon glyphicon-globe"></i> <span></span></a></li>
+      		<li><a href="#deviceStatus"><i class="glyphicon glyphicon-home"></i> <span></span></a></li>
+      		<li><a href="#serviceProvisioning"><i class="glyphicon glyphicon-plus-sign"></i> <span></span></a></li>
+    	</ul>
+  	</div>
+
+  	<div class = 'nameArea'>
+  		<h1> Hackathon Events </h1>
+  		<button class="right">
+  			<div tag="i" id="rightIcon" class="glyphicon glyphicon-chevron-right" style = 'font-size:2em'></div>
+  		</button>
+
+  		<button class="left">
+  			<div tag="i" id="leftIcon" class="glyphicon glyphicon-chevron-left" style = 'font-size:2em'></div>
+  		</button>
+  	</div>
+
 </body>
 
 </html>
